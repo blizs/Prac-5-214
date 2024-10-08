@@ -5,7 +5,7 @@ Alarm::Alarm() {
 }
 
 std::string Alarm::getDeviceType() const {
-    return "Light";
+    return "Alarm";
 }
 
 void Alarm::performAction(const std::string& action) {

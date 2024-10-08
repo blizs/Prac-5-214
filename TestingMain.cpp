@@ -107,6 +107,12 @@ void testMacroRoutine() {
     // Clean up
     delete goodnightRoutine;  // This deletes the individual commands as well
     delete livingRoom;        // This deletes all devices
+    delete doorLock1;
+    delete light1;
+    delete light2;
+    delete turnOffLights;
+    delete lockAllDoors;
+
 
     std::cout << "Macro Routine test complete." << std::endl;
 }
@@ -138,12 +144,13 @@ void testLegacyThermostat() {
     // Clean up
     delete livingRoom;
     delete legacyThermo;  // smartThermo does not own legacyThermo
+    delete smartThermo;
 
     std::cout << "Legacy Thermostat Integration test complete." << std::endl;
 }
 
 // Main function that runs all the tests
-int main() {
+int Testmain() {
     std::cout << "Running Smart Home System Tests..." << std::endl;
 
     // Test the observer pattern functionality
